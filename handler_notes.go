@@ -20,7 +20,7 @@ func (cfg *apiConfig) handlerNotesGet(w http.ResponseWriter, r *http.Request, us
 	postsResp, err := databasePostsToPosts(posts)
 	if err != nil {
 		log.Println(err)
-		respondWithError(w, http.StatusInternalServerError, "Couldn't convert posts")
+		respondWithError(w, http.StatusInternalServerError, "Couldn't convert posts... but i tried")
 		return
 	}
 
